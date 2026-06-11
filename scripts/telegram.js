@@ -215,7 +215,7 @@ async function run() {
   const data = await getPrices()
   if (!data.length) throw new Error("No price data received")
 
-  const message = `⚡ Hello Mr. Moik, here is the price overview for ${formatDateLabel(data)}:\n\n${formatSummary(data)}`
+  const message = `⚡ Here is the price overview for ${formatDateLabel(data)}:\n\n${formatSummary(data)}`
   await sendMessage(message)
   console.log("Telegram message sent.")
 }
