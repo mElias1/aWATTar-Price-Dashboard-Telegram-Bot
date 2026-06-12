@@ -23,3 +23,5 @@ jobs:
 
       - name: Script ausführen
         run: node scripts/telegram.js   # ← deinen Script-Pfad anpassen
+        env:
+          BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
