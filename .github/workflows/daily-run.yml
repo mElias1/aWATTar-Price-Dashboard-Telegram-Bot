@@ -3,6 +3,7 @@ name: Daily Run
 on:
   schedule:
     - cron: '0 11 * * *'  # 16:00 Uhr Österreich Sommerzeit
+  workflow_dispatch:        # ← diese Zeile
 
 jobs:
   run:
