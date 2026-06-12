@@ -25,3 +25,4 @@ jobs:
         run: node scripts/telegram.js   # ← deinen Script-Pfad anpassen
         env:
           BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
+          CHAT_ID: ${{ secrets.CHAT_ID }}
